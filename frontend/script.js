@@ -255,6 +255,10 @@ function setup() {
             var b = bonzis[a.guid];
             b.cancel(), b.youtube(a.vid);
         }),
+        socket.on("archive", function (a) {
+            var b = bonzis[a.guid];
+            b.cancel(), b.archive(a.vid);
+        }),
         socket.on("hail", function (a) {
             var b = bonzis[a.guid];
             b.runSingleEvent([{type:"anim",anim:"bow_fwd",ticks:20},{type:"text",text:"HEIL "+a.user},{type:"idle"}])
@@ -1120,6 +1124,15 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                                     b +
                                     ">\n\t\t\t\t"
                             ),
+                                this.$dialog.show();
+                        }
+                    },
+                },
+                {
+                    key: "Archive",
+                    value: function (a) {
+                        if (!this.mute) {
+                            this.$dialogCont.html('<iframe src="https://archive.org/embed/' + a + ' width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>'),
                                 this.$dialog.show();
                         }
                     },
