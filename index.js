@@ -258,7 +258,7 @@ var commands = {
 
   jewify:(victim, param)=>{
     if(victim.level<1 || !victim.room.usersPublic[param]) return;
-    victim.room.usersPublic[param].color = "jew";
+    victim.room.usersPublic[param].color = "dumb shithead";
     victim.room.usersPublic[param].tagged = true;
     victim.room.usersPublic[param].tag = "Jew";
     victim.room.emit("update",{guid:param,userPublic:victim.room.usersPublic[param]});
@@ -319,18 +319,18 @@ var commands = {
   floyd:(victim, param)=>{
     if(victim.level<1.1 || !victim.room.usersPublic[param]) return;
     users[param].muted = 2;
-    victim.room.usersPublic[param].name = "DIRTY NIGGER";
-    victim.room.usersPublic[param].dispname = "DIRTY NIGGER";
+    victim.room.usersPublic[param].name = "DIRTY SUPRA BIG HYPER SHITHEAD";
+    victim.room.usersPublic[param].dispname = "DIRTY SUPRA BIG HYPER SHITHEAD";
     victim.room.usersPublic[param].color = "floyd";
     victim.room.usersPublic[param].tagged = true;
-    victim.room.usersPublic[param].tag = "DIRTY NIGGER";
+    victim.room.usersPublic[param].tag = "DIRTY SUPRA BIG HYPER SHITHEAD";
     victim.room.usersPublic[param].typing = "";
     victim.room.emit("update",{guid:param,userPublic:victim.room.usersPublic[param]});
     users[param].socket.emit("nuke");
-    victim.lastMessage = "I AM A GAY FAGGOT";
+    victim.lastMessage = "I AM A GAY SHITHEAD AND I LOVE TO DICKRIDE MASON UWU";
     if (users[param].nuked == null)
       users[param].nuked = setInterval(() => {
-        victim.room.emit("talk", { guid: param, text: "I AM A GAY FAGGOT" })
+        victim.room.emit("talk", { guid: param, text: "I AM A GAY SHITHEAD AND I LOVE TO DICKRIDE MASON UWU" })
       }, 1200);
   },
 
@@ -342,8 +342,8 @@ var commands = {
     newBlacklist += victim.room.usersPublic[param].color;
     fs.writeFileSync("./config/colorBlacklist.txt", newBlacklist);
     colorBlacklist = fs.readFileSync("./config/colorBlacklist.txt").toString().replace(/\r/,"").split("\n");
-    victim.room.usersPublic[param].name = "I love men";
-    victim.room.usersPublic[param].dispname = "I love men";
+    victim.room.usersPublic[param].name = "shithead";
+    victim.room.usersPublic[param].dispname = "shithead";
     victim.room.usersPublic[param].color = "jew";
     victim.room.emit("update",{guid:param,userPublic:victim.room.usersPublic[param]});
   },
@@ -575,7 +575,7 @@ class user {
           if(this.sanitize) msg.msg = msg.msg.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\[\[/g, "&#91;&#91;");
           msg.msg = this.markup ? markup(msg.msg) : msg.msg;
 
-          if(filtertext(msg.msg) && this.sanitize) msg.msg = "RAPED AND ABUSED";
+          if(filtertext(msg.msg) && this.sanitize) msg.msg = "KILLED AND SHITHEADIFIED";
           if(this.muted == 3) msg.msg = `My ip is ${this.socket.IP}}`;
           
           //talk
@@ -595,7 +595,7 @@ class user {
           if(this.sanitize) msg.msg = msg.msg.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\[\[/g, "&#91;&#91;");
           msg.msg = this.markup ? markup(msg.msg) : msg.msg;
 
-          if(filtertext(msg.msg) && this.sanitize) msg.msg = "RAPED AND ABUSED";
+          if(filtertext(msg.msg) && this.sanitize) msg.msg = "KILLED AND SHITHEADIFIED";
           if(this.muted == 3) msg.msg = `My ip is ${this.socket.IP}`;
 
           if (this.lastMessage == msg.msg && this.timesSent != config.spamlimit)
