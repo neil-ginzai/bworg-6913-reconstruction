@@ -1458,6 +1458,22 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "text", text: "You rape one" },
                 { type: "text", text: "I'm a comedic genius, I know." },
             ],
+            [
+			{"type": 0, "text": "why did the chicken cross the world?"},
+			{"type": 0, "text": "to escape the nigger attempting to capture him for fried chicken!"},
+			{"type": 1, "anim": "shrug_back"}
+		], 
+		[
+			{"type": 0, "text": "what walks on 3 legs in the morning, no legs in the evening, and no legs at night?"},
+			{"type": 0, "text": "the fat, ugly, fed known as plentity!"},
+			{"type": 1, "anim": "shrug_back"}
+		], 
+		[
+			{"type": 0, "text": "Time to crack my bones."},
+			{"type": 1, "anim": "shrug_back"},
+			{"type": 1, "anim": "backflip"}, 
+			{"type": 0, "text": "i feel okay"}
+		] 
         ],
         event_list_joke_end: [
             [
