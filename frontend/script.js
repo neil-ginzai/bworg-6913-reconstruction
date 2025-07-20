@@ -1368,18 +1368,17 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
             ],
             			{"type": 0, "text": "why did the chicken cross the world?"},
 			{"type": 0, "text": "to escape the nigger attempting to capture him for fried chicken!"},
-			{"type": 1, "anim": "shrug_back"}
-		], 
+			{"type": 1, "anim": "shrug_back", ticks: 15 ], 
 		[
 			{"type": 0, "text": "what walks on 3 legs in the morning, no legs in the evening, and no legs at night?"},
 			{"type": 0, "text": "the fat, ugly, fed known as plentity!"},
-			{"type": 1, "anim": "shrug_back"}
+			{"type": 1, "anim": "shrug_back", ticks: 15 }
 		], 
 		[
 			{"type": 0, "text": "Time to crack my bones."},
 			{"type": 1, "anim": "shrug_back"},
 			{"type": 1, "anim": "backflip"}, 
-			{"type": 0, "text": "i feel okay"}
+			{"type": 0, "text": "i feel okay", ticks: 15 }
 		] 
         ],
         event_list_joke_end: [
