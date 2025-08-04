@@ -1326,8 +1326,8 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "anim", anim: "praise_back", ticks: 15 },
             ],
             [{ type: "text", text: "{NAME} used /joke. Whoop-dee-fucking doo." }],
-            [{ type: "text", text: "{NAME} asked me for jewish comedy." }],
-            [{ type: "text", text: "Prepare to be offended faggots." }],
+            [{ type: "text", text: "{NAME} asked me for neils comedy." }],
+            [{ type: "text", text: "Prepare to be offended shitheads." }],
             [{ type: "text", text: "HEY YOU IDIOTS ITS TIME FOR A JOKE" }],
             [
                 { type: "text", text: "Wanna hear a joke?" },
@@ -1457,6 +1457,11 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "text", text: "How do you get a girlfriend?" },
                 { type: "text", text: "You rape one" },
                 { type: "text", text: "I'm a comedic genius, I know." },
+            ],
+            [
+                { type: "text", text: "Time to break my legs." },
+                { type: "anim", anim: "backflip", ticks: 15 },
+                { type: "text", text: "i feel okay...." },
             ],
         ],
         event_list_joke_end: [
