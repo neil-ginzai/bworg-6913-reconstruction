@@ -706,7 +706,7 @@ socket.emit("talk",{text: d.userPublic.name+" stop being a pastule"});
                                 kys:{
                                     name:"Ask to KYS",
                                     callback:function(){
-                                        socket.emit("talk",{text:"Hey, "+d.userPublic.name+" kill yourself!"})
+                                        socket.emit("talk",{text:"Hey, "+d.userPublic.name+" kill your bad and negative thoughts."})
                                     }
                                 },
 
