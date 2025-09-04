@@ -1344,12 +1344,7 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "text", text: "Kill yourself like a trans person, {NAME}." },
             ],
             [{ type: "text", text: "Senpai {NAME} wants me to tell a joke." }],
-            [{ type: "text", text: "Time for whatever horrible fucking jokes the creator of this site wrote." }],
-            [
-                { type: "text", text: "Wanna hear a..." },
-                { type: "text", text: "Wait...." },
-                { type: "video", text: "./lv_0_20250904182607.mp4" },
-            ],
+            [{ type: "text", text: "Time for whatever horrible fucking jokes the creator of this site wrote." }]
         ],
         event_list_joke_mid: [
             [
@@ -1475,8 +1470,8 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "anim", anim: "praise_back", ticks: 15 },
             ],
             [
-                { type: "text", text: " If your plants or brainrots get robbed in roblox," }
-                { type: "text", text: "Just be chill. " },
+                { type: "text", text: " If your plants or brainrots get robbed in roblox," }, 
+                { type: "text", text: "Just be chill." },
             ],
         ],
         event_list_joke_end: [
