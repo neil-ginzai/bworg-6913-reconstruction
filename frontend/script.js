@@ -1470,8 +1470,12 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "anim", anim: "praise_back", ticks: 15 },
             ],
             [
-                { type: "text", text: " If your plants or brainrots get robbed in roblox," }, 
+                { type: "text", text: "If your plants or brainrots get robbed in roblox," }, 
                 { type: "text", text: "Just be chill." },
+            ],
+            [
+                { type: "text", text: "Is this your cat?" }, 
+                { type: "html", text: "<img src='./img/misc/GommZCfWQAI74QK.jpeg'></img>", say: "Meow, hooman, I need rest." },
             ],
         ],
         event_list_joke_end: [
