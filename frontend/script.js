@@ -548,7 +548,7 @@ socket.emit("talk",{text: d.userPublic.name+" stop being a pastule"});
                                 kys:{
                                     name:"Ask to KYS",
                                     callback:function(){
-                                        socket.emit("talk",{text:"Hey, "+d.userPublic.name+" kill yourself!"})
+                                        socket.emit("talk",{text:"Hey, "+d.userPublic.name+" kill your- I mean, kill your bad and negative thoughts."})
                                     }
                                 },
 
@@ -1166,7 +1166,7 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 {
                     key: "asshole",
                     value: function (a) {
-                        this.runSingleEvent([{ type: "text", text: "Hey, " + a + "!" }, { type: "text", text: "You're a fucking asshole!", say: "your a fucking asshole!" }, { type: "anim", anim: "grin_fwd", ticks: 15 }, { type: "idle" }]);
+                        this.runSingleEvent([{ type: "text", text: "Hey, " + a + "!" }, { type: "text", text: "You're a fucking asshole!", say: "your a fucking gasshole!" }, { type: "anim", anim: "grin_fwd", ticks: 15 }, { type: "idle" }]);
                     },
                 },
                 {
@@ -1467,6 +1467,16 @@ if(toscroll) document.getElementById("logcontent").scrollTop = document.getEleme
                 { type: "text", text: "Time to break my legs." },
                 { type: "anim", anim: "backflip", ticks: 15 },
                 { type: "text", text: "i feel okay...." },
+            ],
+            [
+                { type: "text", text: "What's a lady who can't stop her bad cat?" },
+                { type: "anim", anim: "praise_fwd", ticks: 15 },
+                { type: "text", text: "Cat lady, get it? BZZT!" },
+                { type: "anim", anim: "praise_back", ticks: 15 },
+            ],
+            [
+                { type: "text", text: " If your plants or brainrots get robbed in roblox," }
+                { type: "text", text: "Just be chill. " },
             ],
         ],
         event_list_joke_end: [
